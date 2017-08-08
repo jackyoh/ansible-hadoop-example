@@ -1,0 +1,19 @@
+- name: set JAVA_HOME to /root/.bashrc
+  lineinfile:
+    path: /root/.bashrc
+    line: "export JAVA_HOME={{ java_install_folder }}/jdk{{ java_version }}"
+
+- name: set HADOOP_HOME to /root/.bashrc
+  lineinfile:
+    path: /root/.bashrc
+    line: "export HADOOP_HOME={{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}"
+
+- name: set HBASE_HOME to /etc/profile
+  lineinfile:
+    path: /root/.bashrc
+    line: "export HBASE_HOME={{ hbase_install_folder }}/hbase-{{ hbase_version }}"
+
+- name: set PATH
+  lineinfile:
+    path: /root/.bashrc
+    line: "export PATH=$JAVA_HOME/bin:$HADOOP_HOME/bin:$HBASE_HOME/bin:$PATH"

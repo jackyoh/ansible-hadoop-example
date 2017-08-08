@@ -1,0 +1,4 @@
+- name: copy hadoop config
+  template:
+    src: ../../../hadoop-config-template/core-site.xml
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'

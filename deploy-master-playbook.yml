@@ -1,0 +1,6 @@
+---
+- hosts: master
+  roles:
+   - { role: download }
+   - { role: setting-env-variable }
+   - { role: setting-config }
