@@ -8,11 +8,6 @@
     path: /root/.bashrc
     line: "export HADOOP_HOME={{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}"
 
-- name: set HBASE_HOME to /etc/profile
-  lineinfile:
-    path: /root/.bashrc
-    line: "export HBASE_HOME={{ hbase_install_folder }}/hbase-{{ hbase_version }}"
-
 - name: set PATH
   lineinfile:
     path: /root/.bashrc

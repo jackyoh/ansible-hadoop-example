@@ -1,0 +1,24 @@
+- name: copy hadoop config for core-site.xml
+  template:
+    src: ../../../hadoop-config-template/core-site.xml
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'
+
+- name: copy hadoop config for hdfs-site.xml
+  template:
+    src: ../../../hadoop-config-template/hdfs-site.xml
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'
+
+- name: copy hadoop config for yarn-site.xml
+  template:
+    src: ../../../hadoop-config-template/yarn-site.xml
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'
+
+- name: copy hadoop config for slaves
+  template:
+    src: ../../../hadoop-config-template/slaves
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'
+
+- name: copy hadoop config for hadoop-env.sh
+  template:
+    src: ../../../hadoop-config-template/slaves
+    dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'

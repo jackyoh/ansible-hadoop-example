@@ -1,0 +1,4 @@
+- name: set HBASE_HOME to /etc/profile
+  lineinfile:
+    path: /root/.bashrc
+    line: "export HBASE_HOME={{ hbase_install_folder }}/hbase-{{ hbase_version }}"

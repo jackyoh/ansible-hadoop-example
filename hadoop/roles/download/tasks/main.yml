@@ -9,9 +9,3 @@
    src: '{{ hadoop_download_url }}'
    dest: '{{ hadoop_install_folder }}'
    remote_src: yes
-
-- name: download hbase
-  unarchive:
-   src: '{{ hbase_download_url }}'
-   dest: '{{ hbase_install_folder }}'
-   remote_src: yes

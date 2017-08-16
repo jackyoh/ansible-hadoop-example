@@ -1,0 +1,13 @@
+[default]
+192.168.1.4
+
+[master]
+192.168.1.4
+
+[slave]
+192.168.1.4
+
+[default:vars]
+hbase_download_url=http://192.168.1.4/sharefolder/hbase/hbase-1.1.11-bin.tar.gz
+hbase_version=1.1.11
+hbase_install_folder=/opt
