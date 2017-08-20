@@ -1,0 +1,7 @@
+[default]
+192.168.1.7
+
+[default:vars]
+java_download_url=http://192.168.1.7/sharefolder/java/jdk-8u144-linux-x64.tar.gz
+java_version=1.8.0_144
+java_install_folder=/opt

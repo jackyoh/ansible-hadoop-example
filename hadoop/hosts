@@ -1,27 +1,26 @@
 [default]
-192.168.1.4
+192.168.1.7
 
 [master]
-192.168.1.4
+192.168.1.7
 
 [slave]
-192.168.1.4
+192.168.1.7
 
 [default:vars]
 ansible_user=root
-hadoop_download_url=http://192.168.1.4/sharefolder/hadoop/hadoop-2.7.0.tar.gz
+hadoop_download_url=http://192.168.1.7/sharefolder/hadoop/hadoop-2.7.0.tar.gz
 hadoop_version=2.7.0
 hadoop_install_folder=/opt
+
+JAVA_HOME_PATH=/opt/jdk1.8.0_144
 
 FS_DEFAULTFS=hdfs://host1:9000
 HADOOP_TMP_DIR=/home/user1/tmp
 DFS_NAMENODE_NAME_DIR=/home/user1/namenode
 DFS_DATA_DIR=/home/user1/dfs
-YARN_RESOURCE_ADDRESS=host1:8032
-YARN_RESOURCE_RESOURCE-TRACKER_ADDRESS=host1:8031
-YARN_RESOURCE_SCHEDULER_ADDRESS=host1:8031
-YARN_RESOURCE_HOSTNAME=host1
 
-java_download_url=http://192.168.1.4/sharefolder/java/jdk-8u131-linux-x64.tar.gz
-java_version=1.8.0_131
-java_install_folder=/opt
+YARN_RESOURCE_ADDRESS=host1:8032
+YARN_RESOURCE_RESOURCE_TRACKER_ADDRESS=host1:8031
+YARN_RESOURCE_SCHEDULER_ADDRESS=host1:8030
+YARN_RESOURCE_HOSTNAME=host1

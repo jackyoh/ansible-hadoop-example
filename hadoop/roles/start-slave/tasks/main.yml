@@ -1,0 +1,4 @@
+- name: start datanode service
+  command: hadoop-daemon.sh start datanode
+- name: start resourcemanager service
+  command: yarn-daemon.sh start nodemanager

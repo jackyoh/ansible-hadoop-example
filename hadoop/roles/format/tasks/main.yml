@@ -1,0 +1,2 @@
+- name: namenode format
+  command: hadoop namenode -format

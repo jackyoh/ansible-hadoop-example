@@ -1,9 +1,3 @@
-- name: download java 
-  unarchive:
-   src: '{{ java_download_url }}'
-   dest: '{{ java_install_folder }}'
-   remote_src: yes
-
 - name: download hadoop
   unarchive:
    src: '{{ hadoop_download_url }}'

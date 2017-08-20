@@ -1,0 +1,4 @@
+---
+- hosts: slave
+  roles:
+   - { role: start-slave }

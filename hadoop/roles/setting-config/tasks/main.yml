@@ -20,5 +20,5 @@
 
 - name: copy hadoop config for hadoop-env.sh
   template:
-    src: ../../../hadoop-config-template/slaves
+    src: ../../../hadoop-config-template/hadoop-env.sh
     dest: '{{ hadoop_install_folder }}/hadoop-{{ hadoop_version }}/etc/hadoop'

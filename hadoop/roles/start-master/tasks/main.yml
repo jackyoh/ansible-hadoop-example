@@ -1,0 +1,6 @@
+- name: start namenode service
+  command: hadoop-daemon.sh start namenode
+- name: start resourcemanager service
+  command: yarn-daemon.sh start resourcemanager
+- name: start secondary service
+  command: hadoop-daemon.sh start secondarynamenode

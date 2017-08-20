@@ -1,0 +1,9 @@
+- name: set JAVA_HOME to /root/.bashrc
+  lineinfile:
+    path: /root/.bashrc
+    line: "export JAVA_HOME={{ java_install_folder }}/jdk{{ java_version }}"
+
+- name: set PATH
+  lineinfile:
+    path: /root/.bashrc
+    line: "export PATH=$JAVA_HOME/bin:$PATH"

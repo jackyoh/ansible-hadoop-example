@@ -26,7 +26,7 @@
 
   <property>
       <name>yarn.resourcemanager.resource-tracker.address</name>
-      <value>{{ YARN_RESOURCE_RESOURCE-TRACKER_ADDRESS }}</value>
+      <value>{{ YARN_RESOURCE_RESOURCE_TRACKER_ADDRESS }}</value>
   </property>
 
   <property>

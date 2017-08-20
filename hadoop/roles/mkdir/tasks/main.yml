@@ -1,0 +1,17 @@
+- name: create a {{ HADOOP_TMP_DIR }}
+  file:
+    path: '{{ HADOOP_TMP_DIR }}'
+    state: directory
+    mode: 0755
+
+- name: create a {{ DFS_NAMENODE_NAME_DIR }} folder
+  file:
+    path: '{{ DFS_NAMENODE_NAME_DIR }}'
+    state: directory
+    mode: 0755
+
+- name: create a {{ DFS_DATA_DIR }} folder
+  file:
+    path: '{{ DFS_DATA_DIR }}'
+    state: directory
+    mode: 0755
