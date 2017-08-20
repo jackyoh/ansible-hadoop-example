@@ -1,0 +1,4 @@
+---
+- hosts: '{{ slave_node }}'
+  roles:
+   - { role: start-slave }
