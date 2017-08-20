@@ -1,0 +1,2 @@
+- name: start regionserver service
+  command: hbase-daemon.sh start regionserver

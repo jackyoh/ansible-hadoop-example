@@ -1,0 +1,4 @@
+- name: start zookeeper service
+  command: hbase-daemon.sh start zookeeper
+- name: start hmaster service
+  command: hbase-daemon.sh start master

@@ -1,0 +1,8 @@
+- name: copy hbase-site.xml template to hbase config folder
+  template:
+    src: ../../../hbase-config-template/hbase-site.xml
+    dest: '{{ hbase_install_folder }}/hbase-{{ hbase_version }}/conf'
+- name: copy hbase-env.sh template to hbase config folder
+  template:
+    src: ../../../hbase-config-template/hbase-env.sh
+    dest: '{{ hbase_install_folder }}/hbase-{{ hbase_version }}/conf'

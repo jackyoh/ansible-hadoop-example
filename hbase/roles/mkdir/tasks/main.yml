@@ -1,0 +1,5 @@
+- name: create a {{ HBASE_ZOOKEEPER_PROPERTY_DATADIR }}
+  file:
+    path: '{{ HBASE_ZOOKEEPER_PROPERTY_DATADIR }}'
+    state: directory
+    mode: 0755
