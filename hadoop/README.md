@@ -20,5 +20,5 @@
 
 ## Start slave node command
 ```
-# ansible-playbook -i hosts start-slave-node-playbook.yml --extra-vars "slave_node=slave"
+# ansible-playbook -i hosts start-slave-node-playbook.yml --extra-vars "slave_node=slave1"
 ```
