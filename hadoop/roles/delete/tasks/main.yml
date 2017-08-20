@@ -1,0 +1,12 @@
+- name: delete the hadop tmp dir folder
+  file:
+    state: absent
+    path: '{{ HADOOP_TMP_DIR }}'
+- name: delete the dfs namenode name dir folder
+  file:
+    state: absent
+    path: '{{ DFS_NAMENODE_NAME_DIR }}'
+- name: delete the dfs data dir folder
+  file:
+    state: absent
+    path: '{{ DFS_DATA_DIR }}'

@@ -1,4 +1,6 @@
 ---
 - hosts: master
   roles:
+   - { role: delete }
+   - { role: mkdir }
    - { role: format }
